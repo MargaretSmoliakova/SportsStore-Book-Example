@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SportsStore.Models
 {
-    public static class SeeData
+    public static class SeedData
     {
         public static void EnsurePopulated(IApplicationBuilder app)
         {
