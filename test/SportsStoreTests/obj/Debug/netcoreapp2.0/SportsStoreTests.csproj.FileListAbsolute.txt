@@ -1,9 +1,0 @@
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\bin\Debug\netcoreapp2.0\SportsStoreTests.deps.json
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\bin\Debug\netcoreapp2.0\SportsStoreTests.dll
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\bin\Debug\netcoreapp2.0\SportsStoreTests.pdb
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.csprojResolveAssemblyReference.cache
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.csproj.CoreCompileInputs.cache
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.AssemblyInfoInputs.cache
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.AssemblyInfo.cs
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.dll
-D:\MyProjects\SportsStoreBook\test\SportsStoreTests\obj\Debug\netcoreapp2.0\SportsStoreTests.pdb

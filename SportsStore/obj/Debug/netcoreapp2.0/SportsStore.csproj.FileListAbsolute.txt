@@ -8,3 +8,4 @@ D:\MyProjects\SportsStoreBook\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.As
 D:\MyProjects\SportsStoreBook\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.AssemblyInfo.cs
 D:\MyProjects\SportsStoreBook\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.dll
 D:\MyProjects\SportsStoreBook\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.pdb
+D:\MyProjects\SportsStoreBook\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.csprojResolveAssemblyReference.cache
