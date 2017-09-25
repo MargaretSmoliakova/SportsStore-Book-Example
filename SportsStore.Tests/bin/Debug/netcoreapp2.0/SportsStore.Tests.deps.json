@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "f67644c41750341025fae4b16790bb4dc9c60e0e"
+    "signature": "50c0e981c559e627e4f69b6468a34323f1865796"
   },
   "compilationOptions": {},
   "targets": {
@@ -21,6 +21,11 @@
           "SportsStore.Tests.dll": {}
         }
       },
+      "bootstrap/3.3.7": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "Castle.Core/4.1.1": {
         "dependencies": {
           "System.Collections.Specialized": "4.3.0",
@@ -37,6 +42,7 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
+      "jQuery/1.9.1": {},
       "Libuv/1.10.0": {
         "runtimeTargets": {
           "runtimes/linux-arm/native/libuv.so": {
@@ -3842,7 +3848,8 @@
       "SportsStore/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
+          "bootstrap": "3.3.7"
         },
         "runtime": {
           "SportsStore.dll": {}
@@ -3856,12 +3863,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "bootstrap/3.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3YTWhPNh6UcnUvzw9u6A2/hy2w0h4lznxPbX6FY47lFia3+Ib4zBixTpW6YieYA/b2fLXbkjoD59OjcVF3cJXw==",
+      "path": "bootstrap/3.3.7",
+      "hashPath": "bootstrap.3.3.7.nupkg.sha512"
+    },
     "Castle.Core/4.1.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-O+88tWlRvtYLTn4dgAENyOgaLcExeox73ledI92d72z4U9IGSiiO8n/gnTnWgEMpBuXIdcyzrXHdGtn0c5Dz/A==",
       "path": "castle.core/4.1.1",
       "hashPath": "castle.core.4.1.1.nupkg.sha512"
+    },
+    "jQuery/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "path": "jquery/1.9.1",
+      "hashPath": "jquery.1.9.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
