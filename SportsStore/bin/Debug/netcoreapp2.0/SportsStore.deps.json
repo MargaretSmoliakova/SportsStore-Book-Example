@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "b24ad8ee6b9d445ecafd5a04b2c3313fc84b8b07"
+    "signature": "e3c1c2c5b1cdf7903ff29e037eff808b76777274"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "SportsStore/1.0.0": {
         "dependencies": {
+          "FontAwesome": "4.7.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.0.0",
           "Microsoft.AspNetCore.Session": "2.0.0",
@@ -43,6 +44,7 @@
           "jQuery": "1.9.1"
         }
       },
+      "FontAwesome/4.7.0": {},
       "jQuery/1.9.1": {},
       "Libuv/1.10.0": {
         "dependencies": {
@@ -4254,6 +4256,13 @@
       "sha512": "sha512-3YTWhPNh6UcnUvzw9u6A2/hy2w0h4lznxPbX6FY47lFia3+Ib4zBixTpW6YieYA/b2fLXbkjoD59OjcVF3cJXw==",
       "path": "bootstrap/3.3.7",
       "hashPath": "bootstrap.3.3.7.nupkg.sha512"
+    },
+    "FontAwesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "path": "fontawesome/4.7.0",
+      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
     },
     "jQuery/1.9.1": {
       "type": "package",

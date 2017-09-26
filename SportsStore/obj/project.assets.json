@@ -8,6 +8,9 @@
           "jQuery": "[1.9.1, 4.0.0)"
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "jQuery/1.9.1": {
         "type": "package"
       },
@@ -5064,6 +5067,24 @@
         "content/fonts/glyphicons-halflings-regular.ttf",
         "content/fonts/glyphicons-halflings-regular.woff",
         "content/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "files": [
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
       ]
     },
     "jQuery/1.9.1": {
@@ -13159,6 +13180,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.Http.Extensions >= 2.0.0",
       "Microsoft.AspNetCore.Session >= 2.0.0",
@@ -13236,6 +13258,10 @@
           "Microsoft.Extensions.Caching.Memory": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "4.7.0"
           },
           "bootstrap": {
             "target": "Package",

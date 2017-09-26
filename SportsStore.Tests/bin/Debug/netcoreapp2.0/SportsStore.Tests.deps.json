@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "50c0e981c559e627e4f69b6468a34323f1865796"
+    "signature": "f03dddfbce11889eeab9fe285f38dd1d5dd0d3d3"
   },
   "compilationOptions": {},
   "targets": {
@@ -42,6 +42,7 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
+      "FontAwesome/4.7.0": {},
       "jQuery/1.9.1": {},
       "Libuv/1.10.0": {
         "runtimeTargets": {
@@ -3847,7 +3848,11 @@
       },
       "SportsStore/1.0.0": {
         "dependencies": {
+          "FontAwesome": "4.7.0",
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.0.0",
+          "Microsoft.AspNetCore.Session": "2.0.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
           "bootstrap": "3.3.7"
         },
@@ -3876,6 +3881,13 @@
       "sha512": "sha512-O+88tWlRvtYLTn4dgAENyOgaLcExeox73ledI92d72z4U9IGSiiO8n/gnTnWgEMpBuXIdcyzrXHdGtn0c5Dz/A==",
       "path": "castle.core/4.1.1",
       "hashPath": "castle.core.4.1.1.nupkg.sha512"
+    },
+    "FontAwesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "path": "fontawesome/4.7.0",
+      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
     },
     "jQuery/1.9.1": {
       "type": "package",
