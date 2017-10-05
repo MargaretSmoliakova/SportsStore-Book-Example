@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>Just book's exmaple (ASP.NET mvc core (2016)</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="wwwroot\images\" />
+    <None Include="wwwroot" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Views" CopyToPublishDirectory="Always" />
+    <None Include="appsettings.json" CopyToPublishDirectory="Always" />
+    <None Include="appsettings.production.json" CopyToPublishDirectory="Always" />
+    <None Include="web.config" CopyToPublishDirectory="Always" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +23,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.0" />
   </ItemGroup>
 
 </Project>

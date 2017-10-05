@@ -3854,6 +3854,7 @@
           "Microsoft.AspNetCore.Session": "2.0.0",
           "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
+          "System.Data.SqlClient": "4.4.0",
           "bootstrap": "3.3.7"
         },
         "runtime": {

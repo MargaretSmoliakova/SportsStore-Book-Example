@@ -8,8 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using SportsStore.Models.ViewModels;
 
 namespace SportsStore.Controllers
-{
-    [Authorize]
+{    
     public class AccountController : Controller
     {
         private UserManager<IdentityUser> userManager;
