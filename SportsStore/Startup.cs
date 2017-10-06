@@ -12,19 +12,24 @@ namespace SportsStore
 {
     public class Startup
     {
+        protected string AppPath = string.Empty;
         IConfigurationRoot Configuration;
 
         public Startup(IHostingEnvironment env)
         {
-            Configuration = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").AddJsonFile($"appsettings.{env.EnvironmentName}", true).Build();
+            Configuration = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile($"appsettings.json",optional:true, reloadOnChange: true).AddJsonFile($"appsettings.{env.EnvironmentName}.json", true).Build();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:SportStoreProducts:ConnectionString"]));
-            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:SportStoreIdentity:ConnectionString"]));
+            var connectStr = Configuration["Data:SportStoreProducts:ConnectionString"];
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectStr));
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(connectStr));
+            var optionsBuilder = new DbContextOptionsBuilder();
+            optionsBuilder.UseSqlServer(connectStr);
+            services.AddMvcCore();
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>();
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
@@ -34,10 +39,25 @@ namespace SportsStore
             services.AddMemoryCache();
             services.AddSession();
         }
-
+        private void InitializeDatabase(IApplicationBuilder app)
+        {
+            var ctx = app.ApplicationServices.GetRequiredService<ApplicationDbContext>();
+            ctx.Database.Migrate();
+            var ctxe = app.ApplicationServices.GetRequiredService<AppIdentityDbContext>();
+            ctxe.Database.Migrate();
+            using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                context.Database.Migrate();
+                var context2 = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+                context2.Database.Migrate();
+            }
+            
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -47,6 +67,8 @@ namespace SportsStore
             {
                 app.UseExceptionHandler("/Error");
             }
+            app.UseDeveloperExceptionPage();
+            app.UseStatusCodePages();
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
@@ -82,7 +104,7 @@ namespace SportsStore
                     name: null,
                     template: "{controller=Product}/{action=List}/{id?}");
             });
-
+            InitializeDatabase(app);
             //SeedData.EnsurePopulated(app);
             //IdentitySeedData.EnsurePopulated(app);
         }

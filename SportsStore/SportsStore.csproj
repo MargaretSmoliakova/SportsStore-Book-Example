@@ -12,7 +12,7 @@
     <None Include="Views" CopyToPublishDirectory="Always" />
     <None Include="appsettings.json" CopyToPublishDirectory="Always" />
     <None Include="appsettings.production.json" CopyToPublishDirectory="Always" />
-    <None Include="web.config" CopyToPublishDirectory="Always" />
+    <None Include="web.config" CopyToPublishDirectory="Always" />    
   </ItemGroup>
 
   <ItemGroup>
