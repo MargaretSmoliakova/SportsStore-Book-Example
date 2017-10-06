@@ -8,7 +8,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="wwwroot\images\" />
-    <None Include="wwwroot" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="wwwroot" CopyToPublishDirectory="Always" />
     <None Include="Views" CopyToPublishDirectory="Always" />
     <None Include="appsettings.json" CopyToPublishDirectory="Always" />
     <None Include="appsettings.production.json" CopyToPublishDirectory="Always" />
