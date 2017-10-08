@@ -9,5 +9,6 @@
     <ShowAllFiles>false</ShowAllFiles>
     <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>SportsStoreAzure - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
